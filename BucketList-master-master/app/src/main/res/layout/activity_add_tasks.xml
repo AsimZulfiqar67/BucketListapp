@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addTasks">
+
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="-25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="TITLE"
+            android:inputType="textCapWords"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/descEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/titleEditText"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="-50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="DESCRIPTION"
+            android:inputType="textMultiLine"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/descEditText"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="-50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="POINTS"
+            android:inputType="number"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/repeatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/points"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginTop="18dp"
+            android:text="REPEAT" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repeatButton"
+            android:layout_marginBottom="-50dp"
+            android:id="@+id/difficultyButton"
+
+            android:layout_marginTop="50dp"
+            android:text="DIFFICULTY" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/difficultyButton"
+            android:layout_marginBottom="-50dp"
+            android:id="@+id/gainButton"
+            android:layout_marginTop="50dp"
+            android:text="GAIN IN SKILLS" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gainButton"
+            android:layout_marginBottom="-50dp"
+            android:id="@+id/addTask"
+            android:onClick="addTask"
+            android:layout_marginTop="50dp"
+            android:text="DONE" />
+
+    </RelativeLayout>

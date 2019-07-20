@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/setparameters"
+        android:layout_width="match_parent"
+
+        android:layout_height="35dp"
+        android:background="#FFFFBB33"
+        android:text="Set Parameters"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/FearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/setparameters"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginLeft="5dp"
+            android:text="Fear: " />
+
+        <EditText
+            android:id="@+id/FearEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/setparameters"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginBottom="-25dp"
+            android:layout_toRightOf="@+id/FearText"
+            android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/fearSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/FearText"
+        android:layout_marginBottom="-25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/impText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fearSeekBar"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Importance : " />
+
+    <EditText
+        android:id="@+id/ImpEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fearSeekBar"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="-25dp"
+        android:layout_toRightOf="@+id/impText"
+        android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/impSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/impText"
+        android:layout_marginBottom="-25dp"
+
+        />
+
+    <Button
+        android:id="@+id/savePoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/impSeekBar"
+        android:layout_marginBottom="-50dp"
+        android:background="#FFFFBB33"
+        android:text="SAVE"
+        android:textColor="#FFF" />
+
+
+
+
+    </RelativeLayout>
+
